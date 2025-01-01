@@ -115,16 +115,16 @@ alt-ctrl-x = 'resize smart -50'
 alt-ctrl-f = 'fullscreen'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-a = 'workspace a' # In your config, you can drop workspace bindings that you don't need
-alt-s = 'workspace s'
-alt-d = 'workspace d'
-alt-w = 'workspace w'
+alt-a = 'workspace workspace-a' # In your config, you can drop workspace bindings that you don't need
+alt-s = 'workspace workspace-s'
+alt-d = 'workspace workspace-d'
+alt-w = 'workspace workspace-w'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-a = 'move-node-to-workspace a'
-alt-shift-s = 'move-node-to-workspace s'
-alt-shift-d = 'move-node-to-workspace d'
-alt-shift-w = 'move-node-to-workspace w'
+alt-shift-a = 'move-node-to-workspace workspace-a'
+alt-shift-s = 'move-node-to-workspace workspace-s'
+alt-shift-d = 'move-node-to-workspace workspace-d'
+alt-shift-w = 'move-node-to-workspace workspace-w'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -156,12 +156,12 @@ shift-down = ['volume set 0', 'mode main']
 
 [[on-window-detected]]
 if.app-id = "com.tencent.xinWeChat"
-run = 'move-node-to-workspace s'
+run = 'move-node-to-workspace workspace-s'
 
 [[on-window-detected]]
 if.app-id = "com.mitchellh.ghostty"
-run = 'move-node-to-workspace d'
+run = 'move-node-to-workspace workspace-d'
 
 [[on-window-detected]]
 if.app-id = "com.tencent.WeWorkMac"
-run = 'move-node-to-workspace w'
+run = 'move-node-to-workspace workspace-w'
